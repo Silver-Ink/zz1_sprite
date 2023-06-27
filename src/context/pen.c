@@ -132,7 +132,7 @@ void pen_triangle_colored(context* c, float x1, float y1, color c1,
         create_vertex(X(x3), Y(y3), c3),
     };
 
-    if( SDL_RenderGeometry(c->renderer, NULL, triangleVertex, 3, NULL, 0) < 0 ) {SDL_Log("%s\n", SDL_GetError());}
+    //if( SDL_RenderGeometry(c->renderer, NULL, triangleVertex, 3, NULL, 0) < 0 ) {SDL_Log("%s\n", SDL_GetError());}
 }
 
 bool pen_is_down(context*  c)

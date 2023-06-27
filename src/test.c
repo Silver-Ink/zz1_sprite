@@ -7,12 +7,15 @@ void testVec(){
     vec_push(v, int, 1);
     vec_push(v, int, 2);
 
-    //vec_printf_int(v);
+    int b = vec_get(v,int,1);
+
+    vec_printf_int(v);
     vec_free_lazy(v);
 }
 
 void test_debug()
 {
+    testVec();
         //SDL_Rect r = rectangle(0,10,2)
     //angle a = from_degree(180);
     //float degree = as_degree(a);
